@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+# This relates to the make/uml/Makefile of the latex utilities
+
 cat <<EOF > $1
     \documentclass{article}
 
