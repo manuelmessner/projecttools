@@ -21,7 +21,7 @@ PDFS=$(patsubst %.mp, %.pdf, $(wildcard *.mp))
 #
 # The location of the uml-to-tex script
 #
-GEN_TEST_PDF=../scripts/gen/uml_test_pdf.gen.sh
+GEN_TEST_PDF=./scripts/uml_test_pdf.gen.sh
 
 #
 # Removeables
