@@ -2,12 +2,12 @@ w=$(cat "$1" | egrep -i "(also|while here|^And)")
 
 if [ ! -z "${w}" ]
 then
-    echo >&2 <<EOS
-Commit message hints that there is the possibility to split the commit:
+    echo -e >&2 <<EOS
+\t[PRE-COMMIT]\tCommit message hints that there is the possibility to split the commit:
 
-${w}
+\t${w}
 
-Do you want to split the commit? [Y|n]
+\t[PRE-COMMIT]\tDo you want to split the commit? [Y|n]
 EOS
 
 local answer
