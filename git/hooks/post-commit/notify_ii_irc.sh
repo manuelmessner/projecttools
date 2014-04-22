@@ -2,6 +2,22 @@
 
 # This script is experimental.
 
+#
+# The purpose of this script is to use "ii" from suckless, which is a minimal
+# irc client. With this client, you can write something to a file and it writes
+# it to the appropriate irc channel:
+#
+#   echo "mymessage" > /the/path/to/the/#channel/in
+#
+# and read by reading a file:
+#
+#   tail -f /the/path/to/the/#channel/out
+#
+# With this post-commit hook you can write to an IRC channel that you just
+# committed.
+#
+
+
 DEST=
 
 function shortlog {
